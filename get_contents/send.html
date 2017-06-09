@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    function fn(){
+
+
+        var js_obj = {plugin: 'jquery-json', version: 2.3};
+
+        var encoded = JSON.stringify( js_obj );
+
+        var data= encoded
+
+
+        $.ajax({
+            type: "POST",
+            url: 'post.php',
+            data: data,
+            success: function(data){
+                console.log(data);
+            }
+
+        });
+
+    }
+</script>
+<body>
+<input type="button" value= "click" onclick="fn()">
+</body>
+</html>
