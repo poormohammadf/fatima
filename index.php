@@ -66,4 +66,4 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_exec($ch);
 curl_close($ch);
 //$rep=json_decode(file_get_contents(sprintf($url, $chatId, $response)));
-echo "Ok";
+echo "Okk";
